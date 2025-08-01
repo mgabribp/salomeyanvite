@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salomé 15º</title>
+    <!-- Preconnect para mejorar la carga de recursos -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;500italic;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Tu archivo de estilos personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loading-arch">
+            <img src="img/start01.png" alt="Arco izquierdo" class="loading-arch-left">
+            <img src="img/start02.png" alt="Arco derecho" class="loading-arch-right">
+        </div>
+        <div class="loading-shields">
+            <img src="img/assets/sh-yanez.png" alt="Escudo Yanez" class="loading-shield-right">
+            <img src="img/assets/sh-viteri.png" alt="Escudo Viteri" class="loading-shield-left">
+        </div>
+    </div>
+
+    <header class="hero-section">
+        <div class="hero-text">
+            <p class="story-text">Acompáñanos a celebrar los</p>
+            <h1 class="names">15 años</h1>
+            <br>
+            <h2 class="names" style="font-size: 6em;">Salomé Yánez Viteri</h2>
+            <br>
+            <p class="story-text">"Donde esté tu tesoro, allí estarán también los deseos de tu corazón."<br>
+            <small>Mateo 6:21</small></p>
+        </div>
+    </header>
+
+    <section class="section countdown-section">
+        <h2 class="section-title">Falta muy poco...</h2>
+        <p class="story-text">Con la bendición de Dios y el amor de mi familia, me siento muy feliz de llegar a este momento de mi vida. Los invito a compartir conmigo este día tan especial.</p>
+        <div id="countdown-inline" class="countdown-inline-container"></div>
+        <p></p>
+        <p class="story-text"> <strong> Fecha y Hora:</strong> Domingo, 31 de Agosto de 2025, 16:00</p>
+
+    </section>
+
+    <section class="section details-section">
+        <h2 class="section-title">Sitio del evento</h2>
+        <div class="details-content">
+            <h3>Lugar de la ceremonia</h3>
+            <p>Km 14 1/2 Via Quevedo, CADE</p>
+            <p>Auditorio Nathan Merkel</p>
+            <h3>¿Cómo llegar?</h3>
+            <p>Ingresar al CADE y preguntar en garita por el auditorio Nathan Merkel.</p>
+            <div class="location-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5127.968869107158!2d-79.25099377815006!3d-0.34865357523360124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d536cc25096741%3A0x676906cf1a0a3859!2sCADE%20-%20Unidad%20Educativa%20Particular%20Adventista%20del%20Ecuador!5e1!3m2!1ses-419!2sec!4v1754056699866!5m2!1ses-419!2sec" style="border:0; width:100%; height:300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="story-text">Presiona el botón para abrir en el mapa.</p>
+            <a href="https://maps.app.goo.gl/9Sk3Kee7kXX9kmCy5" target="_blank" class="button">Google Maps</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="section details-section">
+        <h2 class="section-title">Vestimenta</h2>
+        <div class="dress-code">
+            <div class="dress-option">
+                <h3>Ellos</h3>
+                <img src="img/traje.jpg" alt="Vestimenta para caballeros" class="dress-img">
+                <p>Usar corbata y camisa</p>
+            </div>
+            <div class="dress-option">
+                <h3>Ellas</h3>
+                <img src="img/vestido.jpg" alt="Vestimenta para damas" class="dress-img">
+                <p>Usar vestido modesto</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section photo-album-section">
+        <h2 class="section-title">Álbum de Fotos</h2>
+        <p class="section-subtitle">¡Sigue subiendo fotos al álbum de mi celebración de 15 años!</p>
+        <p> </p>
+        <button id="openAlbumModal" class="button">Ver Álbum</button>
+    </section>
+
+    <section class="vertical-roses gallery-section">
+        <h2 class="section-title">Mis Fotos</h2>
+        <div class="gallery-container">
+            <div class="photo-slider">
+                <a href="img/foto-01.jpg" data-lightbox="gallery" data-title="Foto de Salomé 01"><img src="img/foto-01.jpg" alt="Foto de Salomé 1"></a>
+                <a href="img/foto-02.jpg" data-lightbox="gallery" data-title="Foto de Salomé 02"><img src="img/foto-02.jpg" alt="Foto de Salomé 2"></a>
+                <a href="img/foto-03.jpg" data-lightbox="gallery" data-title="Foto de Salomé 03"><img src="img/foto-03.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-04.jpg" data-lightbox="gallery" data-title="Foto de Salomé 04"><img src="img/foto-04.jpg" alt="Foto de Salomé 4"></a>
+                <a href="img/foto-05.jpg" data-lightbox="gallery" data-title="Foto de Salomé 05"><img src="img/foto-05.jpg" alt="Foto de Salomé 5"></a>
+                <a href="img/foto-06.jpg" data-lightbox="gallery" data-title="Foto de Salomé 06"><img src="img/foto-06.jpg" alt="Foto de Salomé 6"></a>
+                <a href="img/foto-07.jpg" data-lightbox="gallery" data-title="Foto de Salomé 07"><img src="img/foto-07.jpg" alt="Foto de Salomé 7"></a>
+                <a href="img/foto-08.jpg" data-lightbox="gallery" data-title="Foto de Salomé 08"><img src="img/foto-08.jpg" alt="Foto de Salomé 1"></a>
+                <a href="img/foto-09.jpg" data-lightbox="gallery" data-title="Foto de Salomé 09"><img src="img/foto-09.jpg" alt="Foto de Salomé 2"></a>
+                <a href="img/foto-10.jpg" data-lightbox="gallery" data-title="Foto de Salomé 10"><img src="img/foto-10.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-11.jpg" data-lightbox="gallery" data-title="Foto de Salomé 11"><img src="img/foto-11.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-12.jpg" data-lightbox="gallery" data-title="Foto de Salomé 12"><img src="img/foto-12.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-13.jpg" data-lightbox="gallery" data-title="Foto de Salomé 13"><img src="img/foto-13.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-14.jpg" data-lightbox="gallery" data-title="Foto de Salomé 14"><img src="img/foto-14.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-15.jpg" data-lightbox="gallery" data-title="Foto de Salomé 15"><img src="img/foto-15.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-16.jpg" data-lightbox="gallery" data-title="Foto de Salomé 16"><img src="img/foto-16.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-17.jpg" data-lightbox="gallery" data-title="Foto de Salomé 17"><img src="img/foto-17.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-18.jpg" data-lightbox="gallery" data-title="Foto de Salomé 18"><img src="img/foto-18.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-19.jpg" data-lightbox="gallery" data-title="Foto de Salomé 19"><img src="img/foto-19.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-20.jpg" data-lightbox="gallery" data-title="Foto de Salomé 20"><img src="img/foto-20.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-21.jpg" data-lightbox="gallery" data-title="Foto de Salomé 21"><img src="img/foto-21.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-22.JPG" data-lightbox="gallery" data-title="Foto de Salomé 22"><img src="img/foto-22.JPG" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-23.jpg" data-lightbox="gallery" data-title="Foto de Salomé 23"><img src="img/foto-23.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-24.jpg" data-lightbox="gallery" data-title="Foto de Salomé 24"><img src="img/foto-24.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-25.JPG" data-lightbox="gallery" data-title="Foto de Salomé 25"><img src="img/foto-25.JPG" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-26.jpg" data-lightbox="gallery" data-title="Foto de Salomé 26"><img src="img/foto-26.jpg" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-27.JPG" data-lightbox="gallery" data-title="Foto de Salomé 27"><img src="img/foto-27.JPG" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-28.JPG" data-lightbox="gallery" data-title="Foto de Salomé 28"><img src="img/foto-28.JPG" alt="Foto de Salomé 3"></a>
+                <a href="img/foto-29.jpg" data-lightbox="gallery" data-title="Foto de Salomé 29"><img src="img/foto-29.jpg" alt="Foto de Salomé 3"></a>
+            </div>
+        </div>
+    </section>
+     
+    <section class="section details-section gifts-section">
+        <h2 class="section-title">Obsequios</h2>
+        <p class="story-text">Tu presencia es mi mejor regalo, y si deseas obsequiarme un detalle, te lo agradeceré con cariño.</p>
+         <button id="openGiftsModal" class="button">Ver más</button><!--  AQUÍ ESTÁ EL BOTÓN  -->
+    </section>
+
+
+
+    <footer class="last-roses">
+        <p class="story-text">Familia Yánez Viteri | 2025</p>
+    </footer>
+
+
+
+       <div id="albumModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Álbum de Fotos</h3>
+            <p>¡Aquí puedes ver todas las fotos de mi ceremonia!</p>
+            <a href="https://photos.app.goo.gl/8BeJ4gXZVxrrj51C8" target="_blank" class="button">Abrir Álbum</a>
+        </div>
+    </div>
+
+    <div id="giftsModal" class="modal">  <!-- AQUÍ ESTÁ EL MODAL -->
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Detalles para Obsequios</h3>
+            <p class="story-text">Si deseas regalarme algo, puedes hacerlo a través de un depósito o transferencia.</p>
+            <p></p>
+            <p class="story-text"><strong>Agradecemos en gran manera su gentileza</strong></p>
+            <p></p>
+            <p class="story-text"><strong>Banco:</strong> Banco Pichincha</p>
+            <p class="story-text"><strong>Titular:</strong> Washington Yánez</p>
+            <p class="story-text"><strong>No. de Cuenta:</strong> 2213610984</p>
+            <p class="story-text"><strong>Tipo:</strong> Ahorros</p>
+            <p class="story-text"><strong>Cédula:</strong> 1714840681</p>
+            <p class="story-text">¡Muchas gracias por tu cariño!</p>
+        </div>
+    </div>
+    
+    <audio id="background-music" loop>
+        <source src="audio/song.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
