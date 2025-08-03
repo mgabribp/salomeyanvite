@@ -136,13 +136,51 @@
          <button id="openGiftsModal" class="button">Ver más</button><!--  AQUÍ ESTÁ EL BOTÓN  -->
     </section>
 
-
+    <section class="section rsvp-section">
+        <h2 class="section-title">Confirma tu Asistencia</h2>
+        <div id="rsvp-content">
+            <p class="story-text">Es un placer disfrutar de tu compañía.</p> 
+            <p class="story-text">Ten la bondad de confirmar tu asistencia hasta el jueves 17 de Agosto de 2025.</p> 
+            <button id="openRsvpModal" class="button">Confirmar Asistencia</button> 
+        </div>
+         <p></p>
+    </section>
 
     <footer class="last-roses">
         <p class="story-text">Familia Yánez Viteri | 2025</p>
     </footer>
 
+        <div id="rsvpModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div id="rsvpFormContainer">
+                    <h3>Confirma tu asistencia</h3>
+                    <p class="story-text">Hasta el domingo 17 de Agosto de 2025.</p>
+                    <form id="rsvpForm" method="POST" action="https://script.google.com/macros/s/AKfycbwgu3MzUIuHGhRqJ9MJmdr2BkhDf4zwKb6ZZ-qVxDj5AB4DfjuEzVue0j-QmTtOTYr6/exec"> 
+                        <label for="name">Nombre(s) del invitado(s):</label>
+                        <input type="text" id="name" name="nombre" required>
 
+                        <label>¿Confirmas tu asistencia?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="si" name="asistencia" value="Si" required><label for="si">Sí, allí estaré</label>
+                            <input type="radio" id="no" name="asistencia" value="No"><label for="no">No podré asistir</label>
+                        </div>
+
+                        <label for="guests">Número de asistentes:</label>
+                        <input type="number" id="guests" name="numero_invitados" min="1" value="1" required>
+
+                        <label for="restrictions">¿Alguna restricción alimentaria importante?</label>
+                        <textarea id="restrictions" name="restricciones" rows="3"></textarea>
+                        
+                        <button type="submit" class="button">Enviar Confirmación</button>
+                    </form>
+                </div>
+                <div id="thankYouMessage" style="display:none;">
+                    <h3>¡Gracias por confirmar!</h3>
+                    <p class="story-text">Tu respuesta ha sido enviada. ¡Te espero para mi abrazo!</p>
+                </div>
+            </div>
+        </div>
 
        <div id="albumModal" class="modal">
         <div class="modal-content">

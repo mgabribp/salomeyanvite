@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const archLeft = document.querySelector('.loading-arch-left');
     const archRight = document.querySelector('.loading-arch-right');
     const shields = document.querySelector('.loading-shields');
-    // const rsvpModal = document.getElementById('rsvpModal'); // Sección eliminada
+    const rsvpModal = document.getElementById('rsvpModal');
     const giftsModal = document.getElementById('giftsModal');
     const albumModal = document.getElementById('albumModal');
     const openGiftsBtn = document.getElementById('openGiftsModal');
-    // const openRsvpBtn = document.getElementById('openRsvpModal'); // Sección eliminada
+    const openRsvpBtn = document.getElementById('openRsvpModal');
     const openAlbumBtn = document.getElementById('openAlbumModal');
     const closeButtons = document.querySelectorAll('.close-button');
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para cerrar todos los modales
     function closeModal() {
-        // if (rsvpModal) rsvpModal.style.display = 'none'; // Sección eliminada
+        if (rsvpModal) rsvpModal.style.display = 'none';
         if (giftsModal) giftsModal.style.display = 'none';
         if (albumModal) albumModal.style.display = 'none';
     }
@@ -100,6 +100,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Cerrar al hacer clic fuera del contenido del modal
+    window.addEventListener('click', (event) => {
+        if (event.target == rsvpModal || event.target == giftsModal || event.target == albumModal) {
+            closeModal();
+        }
+    });
+
     // Abrir modal de Obsequios
     if (openGiftsBtn) {
         openGiftsBtn.addEventListener('click', function() {
@@ -109,7 +116,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Sección de confirmación de asistencia eliminada
+    // Abrir modal de Confirmar Asistencia
+    if (openRsvpBtn) {
+        openRsvpBtn.addEventListener('click', function() {
+            if (rsvpModal) {
+                rsvpModal.style.display = 'flex';
+            }
+        });
+    }
 
     // Abrir modal de Álbum de Fotos
     if (openAlbumBtn) {
@@ -120,7 +134,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- LÓGICA DEL FORMULARIO DE RSVP - ELIMINADA ---
+    // --- LÓGICA DEL FORMULARIO DE RSVP (Sin cambios) ---
+    const form = document.getElementById('rsvpForm');
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            try {
+                const response = await fetch(form.action, { method: form.method, body: formData });
+                if (response.ok) {
+                    document.getElementById('rsvpFormContainer').style.display = 'none';
+                    document.getElementById('thankYouMessage').style.display = 'block';
+                } else {
+                    alert('Hubo un error al enviar tu confirmación. Por favor, inténtalo de nuevo.');
+                }
+            } catch (error) {
+                alert('Hubo un problema de conexión. Por favor, inténtalo de nuevo.');
+            }
+        });
+    }
 
     // --- CONTROL DE VOLUMEN Y REPRODUCCIÓN DE MÚSICA ---
     const backgroundMusic = document.getElementById('background-music');

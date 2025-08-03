@@ -476,7 +476,20 @@ body {
     }
 }
 
-/* ----- RSVP ----- (Sección eliminada) ----- */
+
+    /* ----- RSVP ----- */
+    #rsvp-content p {
+        font-size: 1,2em;
+        font-style: normal;
+        font-weight: 750;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+    .rsvp-expired-message {
+        font-size: 1.2em;
+        color: #555;
+    }
+
 
 /* ----- ÁLBUM DE FOTOS ----- */
 .photo-album-section {
@@ -581,7 +594,19 @@ footer {
         font-size:28px;
         font-weight:bold;
         cursor:pointer}
-        /* Formulario RSVP eliminado */
+        #rsvpForm{display:flex;flex-direction:column;text-align:left}
+        #rsvpForm label{margin-top:15px;margin-bottom:5px;font-weight:bold;color:var(--dark-green)}
+        #rsvpForm input[type=text],
+        #rsvpForm input[type=number],
+        #rsvpForm textarea{width:100%;
+            padding:10px;border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box}#rsvpForm 
+.radio-group{display:flex;
+            gap:20px;
+            align-items:center}#rsvpForm 
+.radio-group label{font-weight:normal}#rsvpForm 
+            button{margin-top:20px}
 
 
 /* ----- RESPONSIVE DESIGN ----- */
