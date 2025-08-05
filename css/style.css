@@ -393,6 +393,13 @@ body {
     margin: 0;
     line-height: 1;
 }
+    .names-big {
+    font-family: var(--font-hero);
+    font-size: 6em;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+}
 .hero-text p {
     font-size: 1.8em;
     letter-spacing: 2px;
@@ -611,8 +618,61 @@ footer {
 
 /* ----- RESPONSIVE DESIGN ----- */
 @media (max-width: 768px) {
-    .nav-menu { display: none; } /* En un futuro se podría agregar un menú*/
-    .hero-text .names { font-size: 4em; }
+    /* Contenedor del texto hero */
+    .hero-text {
+    position: absolute;
+    top: 70%;          /* baja el bloque entero */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    }
+    /* --- Ajustes de la hero-section --- */
+    .hero-section {
+        /* Si deseas que la imagen se vea completa */
+        padding-top: 0rem;
+        background-position: top center;
+    }
+
+    .hero-text .names {
+        font-size: 4.2rem;   /* Tamaño razonable para móvil */
+        line-height: 1.1;
+    }
+
+    .hero-text .names-big {
+        font-size: 4.5rem;   /* Tamaño razonable para móvil */
+        line-height: 1.1;
+    }
+    .hero-text .story-text {
+        font-size: 1.2rem;   /* Tamaño razonable para móvil */
+        line-height: 1.2;
+    }
+    .hero-text p {
+        font-size: 1.2rem;   /* Reduce el subtítulo */
+        margin: 0 10px;      /* Evita que toque los bordes */
+    }
+
+    /* Espacio extra para separar del borde superior si se desea */
+    .hero-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Resto de ajustes que ya tenías */
+    .section-title { font-size: 2.2em; }
+    .event-details { grid-template-columns: 1fr; }
+    .countdown-inline-container { font-size: 1.5em; }
+
+    /* Rosas más pequeñas para no tapar */
+    .section::before,
+    .section::after {
+        width: 150px;
+        height: 150px;
+    }
+    .vertical-roses::before,
+    .vertical-roses::after {
+        width: 100px;
+    }
     .section-title { font-size: 2.2em; }
     .event-details { grid-template-columns: 1fr; }
     .countdown-container { flex-direction: column; gap: 0; }
